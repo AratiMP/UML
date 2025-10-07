@@ -40,7 +40,7 @@ public abstract class Flight {
     }
 
     public String getAirplane(){
-        return this.airplane.getName();
+        return this.airplane.getModel();
     }
 
     public String getDestination(){
