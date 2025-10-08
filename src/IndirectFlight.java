@@ -13,7 +13,12 @@ public class IndirectFlight extends Flight {
     }
     @Override
     public double getFlightCost(){
-        return 0.0;
+        double cost = super.airline.getCostPerClient() + (1 * super.airline.getProfitRate());
+        Iterator<Airport> transientAirportsIter = getTransitAirports();
+        for (Airport currAirport : this.transitAirports) {
+            cost += currAirport.getRefuelTax();
+        }
+        return cost;
     }
 
     public Iterator<Airport> getTransitAirports(){

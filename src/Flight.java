@@ -2,13 +2,13 @@ import java.time.LocalDateTime;
 import java.util.*;
 
 public abstract class Flight {
-    private String flightNumber;
-    private LocalDateTime departueHour;
-    private String boardingGate;
-    private Airport destination;
-    private Airline airline;
-    private Airplane airplane;
-    private ArrayList<Passenger> passengers;
+    protected String flightNumber;
+    protected LocalDateTime departueHour;
+    protected String boardingGate;
+    protected Airport destination;
+    protected Airline airline;
+    protected Airplane airplane;
+    protected ArrayList<Passenger> passengers;
 
     public Flight(String flightNumber, LocalDateTime departueHour,
                         String boardingGate, Airport destination, Airline airline, Airplane airplane){

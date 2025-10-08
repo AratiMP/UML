@@ -10,7 +10,7 @@ public class Airline {
         this.airlineName = airlineName;
         this.profitRate = profitRate;
         this.costPerClient = costPerClient;
-        this.flights = new ArrayList<>();
+        this.flights = new ArrayList<Flight>();
     }
 
     public String getName() { 
