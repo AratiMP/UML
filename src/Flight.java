@@ -2,9 +2,9 @@ import java.time.LocalDateTime;
 import java.util.*;
 
 public abstract class Flight {
-    protected String flightNumber;
-    protected LocalDateTime departueHour;
-    protected String boardingGate;
+    private String flightNumber;
+    private LocalDateTime departueHour;
+    private String boardingGate;
     protected Airport destination;
     protected Airline airline;
     protected Airplane airplane;
