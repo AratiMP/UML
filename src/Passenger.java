@@ -18,4 +18,12 @@ public class Passenger {
     public String getNationality() { 
         return nationality; 
     }
+
+    public void setPassengerName(String passengerName) {
+        this.passengerName = passengerName;
+    }
+
+    public void setNationality(String nationality) {
+        this.nationality = nationality;
+    }
 }

@@ -50,4 +50,12 @@ public abstract class Flight {
     public Iterator<Passenger> getPassengers(){
         return passengers.iterator();
     }
+
+    public void setBoardingGate(String boardingGate) {
+        this.boardingGate = boardingGate;
+    }
+
+    public void setAirplane(Airplane airplane) {
+        this.airplane = airplane;
+    }
 }
